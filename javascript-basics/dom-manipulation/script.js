@@ -22,5 +22,9 @@ content.setAttribute('style', 'border: 1px solid black; background: pink; width:
 // Create h2 element
 const h2 = document.createElement('h2');
 h2.textContent = 'I\'m in a div';
+para.textContent = 'Me too!';
+
+content.appendChild(h2);
+content.appendChild(para);
 
 container.appendChild(content);
