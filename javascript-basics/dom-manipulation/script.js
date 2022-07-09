@@ -19,4 +19,8 @@ container.appendChild(h3);
 const content = document.createElement('div');
 content.setAttribute('style', 'border: 1px solid black; background: pink; width: 200px; height: 100px;');
 
+// Create h2 element
+const h2 = document.createElement('h2');
+h2.textContent = 'I\'m in a div';
+
 container.appendChild(content);
