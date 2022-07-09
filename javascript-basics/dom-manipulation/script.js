@@ -15,3 +15,8 @@ h3.textContent = 'I\'m blue.';
 
 container.appendChild(h3);
 
+// create content div
+const content = document.createElement('div');
+content.setAttribute('style', 'border: 1px solid black; background: pink; width: 200px; height: 100px;');
+
+container.appendChild(content);
