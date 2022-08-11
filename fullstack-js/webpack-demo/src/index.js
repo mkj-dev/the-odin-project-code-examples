@@ -2,6 +2,7 @@ import _ from 'lodash';
 import myName from './myName';
 import {number1, number2, addTwoNumbers, multiplyTwoNumbers} from './mathModule';
 import './style.css';
+import Icon from './img/icon.png';
 
 function component() {
     const element = document.createElement('div');
@@ -15,14 +16,18 @@ function component() {
 
     // myName.js
     nameElement.innerText = myName('Anonymous.');
+    element.appendChild(nameElement);
 
     // mathModule.js
     additionElement.innerText = addTwoNumbers(number1, number2);
     multiplicationElement.innerText = multiplyTwoNumbers(number1, number2);
-
-    element.appendChild(nameElement);
     element.appendChild(additionElement);
     element.appendChild(multiplicationElement);
+
+    // Add icon to our existing div
+    const myIcon = new Image();
+    myIcon.src = Icon;
+    element.appendChild(myIcon);
 
     return element;
 }
