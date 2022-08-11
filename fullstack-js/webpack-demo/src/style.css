@@ -1,6 +1,19 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-Regular.ttf'),
+         url('./fonts/Roboto/Roboto-Italic.ttf');
+    font-weight: 700;         
+}
+
 .hello {
     color: #f70a0a;
     font-size: 32px;
+    font-family: 'Roboto';
     text-align: center;
     background: url('./img/background.jpg') no-repeat center;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: italic;
 }
