@@ -1,6 +1,7 @@
 import _ from 'lodash'; 
 import myName from './myName';
 import {number1, number2, addTwoNumbers, multiplyTwoNumbers} from './mathModule';
+import './style.css';
 
 function component() {
     const element = document.createElement('div');
@@ -10,8 +11,11 @@ function component() {
 
     // Lodash, now imported by this script
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.classList.add('hello');
+
     // myName.js
     nameElement.innerText = myName('Anonymous.');
+
     // mathModule.js
     additionElement.innerText = addTwoNumbers(number1, number2);
     multiplicationElement.innerText = multiplyTwoNumbers(number1, number2);
