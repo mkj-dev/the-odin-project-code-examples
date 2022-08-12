@@ -3,6 +3,8 @@ import myName from './myName';
 import {number1, number2, addTwoNumbers, multiplyTwoNumbers} from './mathModule';
 import './style.css';
 import Icon from './img/icon.png';
+import Data from './data/data.xml';
+import Notes from './data/data.csv';
 
 function component() {
     const element = document.createElement('div');
@@ -28,6 +30,10 @@ function component() {
     const myIcon = new Image();
     myIcon.src = Icon;
     element.appendChild(myIcon);
+
+    // Console log data.csv and data.xml
+    console.log(Data);
+    console.log(Notes);
 
     return element;
 }
